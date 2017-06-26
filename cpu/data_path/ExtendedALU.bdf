@@ -244,38 +244,6 @@ agreement for further details.
 	(annotation_block (parameter)(rect 616 304 818 367))
 )
 (symbol
-	(rect 1360 168 1424 216)
-	(text "AND2" (rect 1 0 34 11)(font "Arial" (font_size 6)))
-	(text "inst9" (rect 3 37 44 51)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN1" (rect 2 7 19 21)(font "Courier New" (bold))(invisible))
-		(text "IN1" (rect 2 7 19 21)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 14 16))
-	)
-	(port
-		(pt 0 32)
-		(input)
-		(text "IN2" (rect 2 23 19 37)(font "Courier New" (bold))(invisible))
-		(text "IN2" (rect 2 23 19 37)(font "Courier New" (bold))(invisible))
-		(line (pt 0 32)(pt 14 32))
-	)
-	(port
-		(pt 64 24)
-		(output)
-		(text "OUT" (rect 48 15 65 29)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 29)(font "Courier New" (bold))(invisible))
-		(line (pt 42 24)(pt 64 24))
-	)
-	(drawing
-		(line (pt 14 12)(pt 30 12))
-		(line (pt 14 37)(pt 31 37))
-		(line (pt 14 12)(pt 14 37))
-		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
-	)
-)
-(symbol
 	(rect 1280 208 1344 256)
 	(text "OR2" (rect 1 0 25 11)(font "Arial" (font_size 6)))
 	(text "inst10" (rect 3 37 52 51)(font "Arial" ))
@@ -1378,37 +1346,6 @@ agreement for further details.
 	(annotation_block (parameter)(rect -224 1520 -22 1583))
 )
 (symbol
-	(rect -16 1584 96 1632)
-	(text "LPM_CONSTANT" (rect 4 0 159 18)(font "Arial" (font_size 10)))
-	(text "inst45" (rect 3 37 52 51)(font "Arial" ))
-	(port
-		(pt 112 32)
-		(output)
-		(text "result[LPM_WIDTH-1..0]" (rect 75 19 282 35)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 19 150 35)(font "Arial" (font_size 8)))
-		(line (pt 64 32)(pt 112 32)(line_width 3))
-	)
-	(parameter
-		"LPM_CVALUE"
-		"0"
-		"Unsigned value to which outputs will be set"
-	)
-	(parameter
-		"LPM_WIDTH"
-		"5"
-		"Width of output, any integer > 0"
-		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" 
-	)
-	(drawing
-		(text "(cvalue)" (rect 21 26 96 42)(font "Arial" (font_size 8)))
-		(line (pt 16 24)(pt 64 24))
-		(line (pt 16 40)(pt 64 40))
-		(line (pt 64 40)(pt 64 24))
-		(line (pt 16 40)(pt 16 24))
-	)
-	(annotation_block (parameter)(rect -224 1568 -22 1631))
-)
-(symbol
 	(rect -16 1632 96 1680)
 	(text "LPM_CONSTANT" (rect 4 0 159 18)(font "Arial" (font_size 10)))
 	(text "inst46" (rect 3 37 52 51)(font "Arial" ))
@@ -2465,6 +2402,101 @@ agreement for further details.
 		(circle (rect 31 12 39 20))
 	)
 )
+(symbol
+	(rect -16 1584 96 1632)
+	(text "LPM_CONSTANT" (rect 4 0 159 18)(font "Arial" (font_size 10)))
+	(text "inst45" (rect 3 37 52 51)(font "Arial" ))
+	(port
+		(pt 112 32)
+		(output)
+		(text "result[LPM_WIDTH-1..0]" (rect 75 19 282 35)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 19 150 35)(font "Arial" (font_size 8)))
+		(line (pt 64 32)(pt 112 32)(line_width 3))
+	)
+	(parameter
+		"LPM_CVALUE"
+		"3"
+		"Unsigned value to which outputs will be set"
+	)
+	(parameter
+		"LPM_WIDTH"
+		"5"
+		"Width of output, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" 
+	)
+	(drawing
+		(text "(cvalue)" (rect 21 26 96 42)(font "Arial" (font_size 8)))
+		(line (pt 16 24)(pt 64 24))
+		(line (pt 16 40)(pt 64 40))
+		(line (pt 64 40)(pt 64 24))
+		(line (pt 16 40)(pt 16 24))
+	)
+	(annotation_block (parameter)(rect -224 1568 -22 1631))
+)
+(symbol
+	(rect 1360 168 1424 216)
+	(text "AND3" (rect 1 0 34 11)(font "Arial" (font_size 6)))
+	(text "inst67" (rect 3 37 52 51)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 21)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 21)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 16 16))
+	)
+	(port
+		(pt 0 24)
+		(input)
+		(text "IN2" (rect 2 15 19 29)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 15 19 29)(font "Courier New" (bold))(invisible))
+		(line (pt 0 24)(pt 16 24))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN3" (rect 2 23 19 37)(font "Courier New" (bold))(invisible))
+		(text "IN3" (rect 2 23 19 37)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 29)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 29)(font "Courier New" (bold))(invisible))
+		(line (pt 43 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 16 12)(pt 31 12))
+		(line (pt 16 37)(pt 31 37))
+		(line (pt 16 12)(pt 16 37))
+		(arc (pt 31 36)(pt 31 12)(rect 19 12 44 37))
+	)
+)
+(symbol
+	(rect 1288 176 1336 208)
+	(text "NOT" (rect 1 0 25 11)(font "Arial" (font_size 6)))
+	(text "inst68" (rect 3 21 52 35)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 21)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 21)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 21)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 21)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
 (connector
 	(pt 1104 80)
 	(pt 1096 80)
@@ -3315,5 +3347,14 @@ agreement for further details.
 (connector
 	(pt 688 1344)
 	(pt 712 1344)
+)
+(connector
+	(pt 1336 192)
+	(pt 1360 192)
+)
+(connector
+	(text "Opcode[4]" (rect 1252 176 1326 190)(font "Arial" ))
+	(pt 1232 192)
+	(pt 1288 192)
 )
 (junction (pt 328 64))
