@@ -1,0 +1,177 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 520 240)
+	(text "NOPIU" (rect 5 0 52 16)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 206 41 220)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Hazard" (rect 0 0 56 16)(font "Arial" (font_size 8)))
+		(text "Hazard" (rect 21 27 77 43)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Memwrite" (rect 0 0 75 16)(font "Arial" (font_size 8)))
+		(text "Memwrite" (rect 21 43 96 59)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Opcode[4..0]" (rect 0 0 113 16)(font "Arial" (font_size 8)))
+		(text "Opcode[4..0]" (rect 21 59 134 75)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "Register1_Index[4..0]" (rect 0 0 198 16)(font "Arial" (font_size 8)))
+		(text "Register1_Index[4..0]" (rect 21 75 219 91)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "Register1[31..0]" (rect 0 0 151 16)(font "Arial" (font_size 8)))
+		(text "Register1[31..0]" (rect 21 91 172 107)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "Register2_Index[4..0]" (rect 0 0 198 16)(font "Arial" (font_size 8)))
+		(text "Register2_Index[4..0]" (rect 21 107 219 123)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "Register2[31..0]" (rect 0 0 151 16)(font "Arial" (font_size 8)))
+		(text "Register2[31..0]" (rect 21 123 172 139)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "Dest_Reg[4..0]" (rect 0 0 132 16)(font "Arial" (font_size 8)))
+		(text "Dest_Reg[4..0]" (rect 21 139 153 155)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "Shamt[4..0]" (rect 0 0 103 16)(font "Arial" (font_size 8)))
+		(text "Shamt[4..0]" (rect 21 155 124 171)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "Immediate[15..0]" (rect 0 0 151 16)(font "Arial" (font_size 8)))
+		(text "Immediate[15..0]" (rect 21 171 172 187)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "Address[15..0]" (rect 0 0 132 16)(font "Arial" (font_size 8)))
+		(text "Address[15..0]" (rect 21 187 153 203)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
+	)
+	(port
+		(pt 504 32)
+		(output)
+		(text "NOPIU_Memwrite" (rect 0 0 132 16)(font "Arial" (font_size 8)))
+		(text "NOPIU_Memwrite" (rect 351 27 483 43)(font "Arial" (font_size 8)))
+		(line (pt 504 32)(pt 488 32))
+	)
+	(port
+		(pt 504 48)
+		(output)
+		(text "NOPIU_Opcode[4..0]" (rect 0 0 169 16)(font "Arial" (font_size 8)))
+		(text "NOPIU_Opcode[4..0]" (rect 314 43 483 59)(font "Arial" (font_size 8)))
+		(line (pt 504 48)(pt 488 48)(line_width 3))
+	)
+	(port
+		(pt 504 64)
+		(output)
+		(text "NOPIU_Register1_Index[4..0]" (rect 0 0 254 16)(font "Arial" (font_size 8)))
+		(text "NOPIU_Register1_Index[4..0]" (rect 229 59 483 75)(font "Arial" (font_size 8)))
+		(line (pt 504 64)(pt 488 64)(line_width 3))
+	)
+	(port
+		(pt 504 80)
+		(output)
+		(text "NOPIU_Register1[31..0]" (rect 0 0 207 16)(font "Arial" (font_size 8)))
+		(text "NOPIU_Register1[31..0]" (rect 276 75 483 91)(font "Arial" (font_size 8)))
+		(line (pt 504 80)(pt 488 80)(line_width 3))
+	)
+	(port
+		(pt 504 96)
+		(output)
+		(text "NOPIU_Register2_Index[4..0]" (rect 0 0 254 16)(font "Arial" (font_size 8)))
+		(text "NOPIU_Register2_Index[4..0]" (rect 229 91 483 107)(font "Arial" (font_size 8)))
+		(line (pt 504 96)(pt 488 96)(line_width 3))
+	)
+	(port
+		(pt 504 112)
+		(output)
+		(text "NOPIU_Register2[31..0]" (rect 0 0 207 16)(font "Arial" (font_size 8)))
+		(text "NOPIU_Register2[31..0]" (rect 276 107 483 123)(font "Arial" (font_size 8)))
+		(line (pt 504 112)(pt 488 112)(line_width 3))
+	)
+	(port
+		(pt 504 128)
+		(output)
+		(text "NOPIU_Dest_Reg[4..0]" (rect 0 0 188 16)(font "Arial" (font_size 8)))
+		(text "NOPIU_Dest_Reg[4..0]" (rect 295 123 483 139)(font "Arial" (font_size 8)))
+		(line (pt 504 128)(pt 488 128)(line_width 3))
+	)
+	(port
+		(pt 504 144)
+		(output)
+		(text "NOPIU_Shamt[4..0]" (rect 0 0 160 16)(font "Arial" (font_size 8)))
+		(text "NOPIU_Shamt[4..0]" (rect 323 139 483 155)(font "Arial" (font_size 8)))
+		(line (pt 504 144)(pt 488 144)(line_width 3))
+	)
+	(port
+		(pt 504 160)
+		(output)
+		(text "NOPIU_Immediate[15..0]" (rect 0 0 207 16)(font "Arial" (font_size 8)))
+		(text "NOPIU_Immediate[15..0]" (rect 276 155 483 171)(font "Arial" (font_size 8)))
+		(line (pt 504 160)(pt 488 160)(line_width 3))
+	)
+	(port
+		(pt 504 176)
+		(output)
+		(text "NOPIU_Address[15..0]" (rect 0 0 188 16)(font "Arial" (font_size 8)))
+		(text "NOPIU_Address[15..0]" (rect 295 171 483 187)(font "Arial" (font_size 8)))
+		(line (pt 504 176)(pt 488 176)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 488 208))
+	)
+)
