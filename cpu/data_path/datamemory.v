@@ -4,7 +4,7 @@ module datamemory( write, addr, datain, dataout, clk, reset);
 	input write, clk, reset;
 	output reg[31:0] dataout;
 	
-	reg[31:0] mem[2**16 - 1 : 0];
+	reg[31:0] mem[255 : 0];
 	
 	always @(posedge clk) begin
 		if(reset) begin

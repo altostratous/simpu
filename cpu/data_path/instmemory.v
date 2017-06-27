@@ -4,7 +4,7 @@ module instmemory( write, addr, datain, dataout, clk, reset);
 	input write, clk, reset;
 	output reg[31:0] dataout;
 	
-	reg[31:0] mem[65535 : 0];
+	reg[31:0] mem[255 : 0];
 	
 	always @(posedge clk) begin
 		if(reset) begin
