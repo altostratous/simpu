@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY IDtoMemRegs
+set_global_assignment -name TOP_LEVEL_ENTITY DataPath
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:06:07  MARCH 14, 2017"
 set_global_assignment -name LAST_QUARTUS_VERSION 15.1.0
@@ -117,12 +117,12 @@ set_global_assignment -name BDF_FILE cpu/data_path/IDtoMemRegs.bdf
 set_global_assignment -name BDF_FILE cpu/data_path/register_file/Register5.bdf
 set_global_assignment -name BDF_FILE cpu/data_path/register_file/Register16.bdf
 set_global_assignment -name BDF_FILE cpu/data_path/register_file/Register1.bdf
-set_global_assignment -name BDF_FILE cpu/data_path/MemtoEXRegs.bdf
 set_global_assignment -name BDF_FILE cpu/data_path/NOPIU.bdf
 set_global_assignment -name BDF_FILE cpu/data_path/EXtoWBRegs.bdf
+set_global_assignment -name BDF_FILE cpu/data_path/MemtoEXRegs.bdf
+set_global_assignment -name BDF_FILE cpu/data_path/Preprocessor.bdf
+
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name BDF_FILE cpu/data_path/MemtoEXRegs.bdf
-set_global_assignment -name BDF_FILE cpu/data_path/Preprocessor.bdf
