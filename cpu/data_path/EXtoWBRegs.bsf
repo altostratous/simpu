@@ -41,8 +41,8 @@ agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "WBSignals" (rect 0 0 84 16)(font "Arial" (font_size 8)))
-		(text "WBSignals" (rect 21 59 105 75)(font "Arial" (font_size 8)))
+		(text "RegWrite" (rect 0 0 75 16)(font "Arial" (font_size 8)))
+		(text "RegWrite" (rect 21 59 96 75)(font "Arial" (font_size 8)))
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
@@ -125,8 +125,8 @@ agreement for further details.
 	(port
 		(pt 480 32)
 		(output)
-		(text "WBSignal" (rect 0 0 75 16)(font "Arial" (font_size 8)))
-		(text "WBSignal" (rect 384 27 459 43)(font "Arial" (font_size 8)))
+		(text "WB_RegWrite" (rect 0 0 103 16)(font "Arial" (font_size 8)))
+		(text "WB_RegWrite" (rect 356 27 459 43)(font "Arial" (font_size 8)))
 		(line (pt 480 32)(pt 464 32))
 	)
 	(port
