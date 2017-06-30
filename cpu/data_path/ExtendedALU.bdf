@@ -1222,37 +1222,6 @@ agreement for further details.
 	(annotation_block (parameter)(rect -224 1280 -22 1343))
 )
 (symbol
-	(rect -16 1344 96 1392)
-	(text "LPM_CONSTANT" (rect 4 0 159 18)(font "Arial" (font_size 10)))
-	(text "inst40" (rect 3 37 52 51)(font "Arial" ))
-	(port
-		(pt 112 32)
-		(output)
-		(text "result[LPM_WIDTH-1..0]" (rect 75 19 282 35)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 19 150 35)(font "Arial" (font_size 8)))
-		(line (pt 64 32)(pt 112 32)(line_width 3))
-	)
-	(parameter
-		"LPM_CVALUE"
-		"6"
-		"Unsigned value to which outputs will be set"
-	)
-	(parameter
-		"LPM_WIDTH"
-		"5"
-		"Width of output, any integer > 0"
-		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" 
-	)
-	(drawing
-		(text "(cvalue)" (rect 21 26 96 42)(font "Arial" (font_size 8)))
-		(line (pt 16 24)(pt 64 24))
-		(line (pt 16 40)(pt 64 40))
-		(line (pt 64 40)(pt 64 24))
-		(line (pt 16 40)(pt 16 24))
-	)
-	(annotation_block (parameter)(rect -224 1328 -22 1391))
-)
-(symbol
 	(rect -16 1440 96 1488)
 	(text "LPM_CONSTANT" (rect 4 0 159 18)(font "Arial" (font_size 10)))
 	(text "inst42" (rect 3 37 52 51)(font "Arial" ))
@@ -2496,6 +2465,37 @@ agreement for further details.
 		(line (pt 13 25)(pt 31 16))
 		(circle (rect 31 12 39 20))
 	)
+)
+(symbol
+	(rect -16 1344 96 1392)
+	(text "LPM_CONSTANT" (rect 4 0 159 18)(font "Arial" (font_size 10)))
+	(text "inst40" (rect 3 37 52 51)(font "Arial" ))
+	(port
+		(pt 112 32)
+		(output)
+		(text "result[LPM_WIDTH-1..0]" (rect 75 19 282 35)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 19 150 35)(font "Arial" (font_size 8)))
+		(line (pt 64 32)(pt 112 32)(line_width 3))
+	)
+	(parameter
+		"LPM_CVALUE"
+		"0"
+		"Unsigned value to which outputs will be set"
+	)
+	(parameter
+		"LPM_WIDTH"
+		"5"
+		"Width of output, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" 
+	)
+	(drawing
+		(text "(cvalue)" (rect 21 26 96 42)(font "Arial" (font_size 8)))
+		(line (pt 16 24)(pt 64 24))
+		(line (pt 16 40)(pt 64 40))
+		(line (pt 64 40)(pt 64 24))
+		(line (pt 16 40)(pt 16 24))
+	)
+	(annotation_block (parameter)(rect -224 1328 -22 1391))
 )
 (connector
 	(pt 1104 80)
