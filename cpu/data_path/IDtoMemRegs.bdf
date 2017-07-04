@@ -232,7 +232,7 @@ agreement for further details.
 	(input)
 	(rect 104 -152 336 -136)
 	(text "INPUT" (rect 189 0 230 11)(font "Arial" (font_size 6)))
-	(text "IN2_Select[1..0]" (rect 5 0 138 14)(font "Arial" ))
+	(text "IN2_Select[1..0]" (rect 5 0 137 14)(font "Arial" ))
 	(pt 232 8)
 	(drawing
 		(line (pt 148 12)(pt 173 12))
@@ -248,7 +248,7 @@ agreement for further details.
 	(input)
 	(rect 200 -288 376 -272)
 	(text "INPUT" (rect 133 0 174 11)(font "Arial" (font_size 6)))
-	(text "IN1_Select" (rect 5 0 88 14)(font "Arial" ))
+	(text "IN1_Select" (rect 5 0 87 14)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12))
@@ -264,7 +264,7 @@ agreement for further details.
 	(input)
 	(rect 168 -720 376 -704)
 	(text "INPUT" (rect 165 0 206 11)(font "Arial" (font_size 6)))
-	(text "MemAddressSrc" (rect 5 0 113 14)(font "Arial" ))
+	(text "MemAddressSrc" (rect 5 0 112 14)(font "Arial" ))
 	(pt 208 8)
 	(drawing
 		(line (pt 124 12)(pt 149 12))
@@ -278,9 +278,9 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect 216 -440 392 -424)
+	(rect 208 -568 384 -552)
 	(text "INPUT" (rect 133 0 174 11)(font "Arial" (font_size 6)))
-	(text "MemDataSrc" (rect 5 0 88 14)(font "Arial" ))
+	(text "MemDataSrc" (rect 5 0 87 14)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 92 12)(pt 117 12))
@@ -291,6 +291,22 @@ agreement for further details.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 160 18)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 104 -424 352 -408)
+	(text "INPUT" (rect 205 0 246 11)(font "Arial" (font_size 6)))
+	(text "MemDataForwardable" (rect 5 0 153 14)(font "Arial" ))
+	(pt 248 8)
+	(drawing
+		(line (pt 164 12)(pt 189 12))
+		(line (pt 164 4)(pt 189 4))
+		(line (pt 193 8)(pt 248 8))
+		(line (pt 164 12)(pt 164 4))
+		(line (pt 189 4)(pt 193 8))
+		(line (pt 189 12)(pt 193 8))
+	)
+	(text "VCC" (rect 208 7 232 18)(font "Arial" (font_size 6)))
 )
 (pin
 	(output)
@@ -518,9 +534,25 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 904 -440 1115 -424)
+	(rect 896 -568 1107 -552)
 	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
 	(text "Mem_MemDataSrc" (rect 90 0 205 14)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 704 -424 981 -408)
+	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
+	(text "Mem_MemDataForwardable" (rect 90 0 271 14)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -1131,7 +1163,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 512 -464 672 -336)
+	(rect 504 -592 664 -464)
 	(text "Register1" (rect 5 0 89 16)(font "Arial" (font_size 8)))
 	(text "inst7" (rect 8 110 49 124)(font "Arial" ))
 	(port
@@ -1214,6 +1246,49 @@ agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 256 112))
+	)
+)
+(symbol
+	(rect 472 -448 632 -320)
+	(text "Register1" (rect 5 0 89 16)(font "Arial" (font_size 8)))
+	(text "inst10" (rect 8 110 57 124)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "regin" (rect 0 0 47 16)(font "Arial" (font_size 8)))
+		(text "regin" (rect 21 27 68 43)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clock" (rect 0 0 47 16)(font "Arial" (font_size 8)))
+		(text "clock" (rect 21 43 68 59)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "clear" (rect 0 0 47 16)(font "Arial" (font_size 8)))
+		(text "clear" (rect 21 59 68 75)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "write" (rect 0 0 47 16)(font "Arial" (font_size 8)))
+		(text "write" (rect 21 75 68 91)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 160 32)
+		(output)
+		(text "regout" (rect 0 0 56 16)(font "Arial" (font_size 8)))
+		(text "regout" (rect 83 27 139 43)(font "Arial" (font_size 8)))
+		(line (pt 160 32)(pt 144 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 144 112))
 	)
 )
 (connector
@@ -1509,29 +1584,6 @@ agreement for further details.
 	(pt 496 -664)
 )
 (connector
-	(pt 392 -432)
-	(pt 512 -432)
-)
-(connector
-	(text "Clock" (rect 440 -432 481 -418)(font "Arial" ))
-	(pt 432 -416)
-	(pt 512 -416)
-)
-(connector
-	(text "Clear" (rect 408 -416 449 -402)(font "Arial" ))
-	(pt 400 -400)
-	(pt 512 -400)
-)
-(connector
-	(text "Write" (rect 360 -400 401 -386)(font "Arial" ))
-	(pt 360 -384)
-	(pt 512 -384)
-)
-(connector
-	(pt 672 -432)
-	(pt 904 -432)
-)
-(connector
 	(pt 336 -144)
 	(pt 456 -144)
 )
@@ -1578,6 +1630,52 @@ agreement for further details.
 	(pt 656 -280)
 	(pt 768 -280)
 )
+(connector
+	(pt 384 -560)
+	(pt 504 -560)
+)
+(connector
+	(text "Clock" (rect 432 -560 473 -546)(font "Arial" ))
+	(pt 424 -544)
+	(pt 504 -544)
+)
+(connector
+	(text "Clear" (rect 400 -544 441 -530)(font "Arial" ))
+	(pt 392 -528)
+	(pt 504 -528)
+)
+(connector
+	(text "Write" (rect 352 -528 393 -514)(font "Arial" ))
+	(pt 352 -512)
+	(pt 504 -512)
+)
+(connector
+	(pt 664 -560)
+	(pt 896 -560)
+)
+(connector
+	(text "Write" (rect 320 -384 361 -370)(font "Arial" ))
+	(pt 320 -368)
+	(pt 472 -368)
+)
+(connector
+	(pt 352 -416)
+	(pt 472 -416)
+)
+(connector
+	(text "Clock" (rect 400 -416 441 -402)(font "Arial" ))
+	(pt 392 -400)
+	(pt 472 -400)
+)
+(connector
+	(text "Clear" (rect 368 -400 409 -386)(font "Arial" ))
+	(pt 360 -384)
+	(pt 472 -384)
+)
+(connector
+	(pt 704 -416)
+	(pt 632 -416)
+)
 (text "Clock" (rect 416 -864 457 -850)(font "Arial" ))
 (text "Clear" (rect 384 -848 425 -834)(font "Arial" ))
 (text "Write" (rect 336 -832 377 -818)(font "Arial" ))
@@ -1587,7 +1685,9 @@ agreement for further details.
 (text "Write" (rect 368 48 409 62)(font "Arial" ))
 (text "Clear" (rect 392 -264 433 -250)(font "Arial" ))
 (text "Write" (rect 344 -248 385 -234)(font "Arial" ))
-(text "Clear" (rect 408 -416 449 -402)(font "Arial" ))
-(text "Write" (rect 360 -400 401 -386)(font "Arial" ))
+(text "Clear" (rect 400 -544 441 -530)(font "Arial" ))
+(text "Write" (rect 352 -528 393 -514)(font "Arial" ))
 (text "Clear" (rect 352 -128 393 -114)(font "Arial" ))
 (text "Write" (rect 304 -112 345 -98)(font "Arial" ))
+(text "Clear" (rect 368 -400 409 -386)(font "Arial" ))
+(text "Write" (rect 320 -384 361 -370)(font "Arial" ))
