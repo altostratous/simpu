@@ -150,7 +150,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 1744 -280 2046 -264)
+	(rect 1552 -400 1854 -384)
 	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
 	(text "Debug_Reg1_Selected[4..0]" (rect 90 0 296 14)(font "Arial" ))
 	(pt 0 8)
@@ -2860,70 +2860,6 @@ agreement for further details.
 	(annotation_block (parameter)(rect 4352 672 4544 714))
 )
 (symbol
-	(rect 2136 -608 2456 -448)
-	(text "HDU" (rect 5 0 33 16)(font "Arial" (font_size 8)))
-	(text "inst49" (rect 8 142 57 156)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "Hazard1" (rect 0 0 66 16)(font "Arial" (font_size 8)))
-		(text "Hazard1" (rect 21 27 87 43)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "Hazard2" (rect 0 0 66 16)(font "Arial" (font_size 8)))
-		(text "Hazard2" (rect 21 43 87 59)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "Hazard3" (rect 0 0 66 16)(font "Arial" (font_size 8)))
-		(text "Hazard3" (rect 21 59 87 75)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "Register1_Index[4..0]" (rect 0 0 198 16)(font "Arial" (font_size 8)))
-		(text "Register1_Index[4..0]" (rect 21 75 219 91)(font "Arial" (font_size 8)))
-		(line (pt 0 80)(pt 16 80)(line_width 3))
-	)
-	(port
-		(pt 0 96)
-		(input)
-		(text "Mem_DestRegister[4..0]" (rect 0 0 207 16)(font "Arial" (font_size 8)))
-		(text "Mem_DestRegister[4..0]" (rect 21 91 228 107)(font "Arial" (font_size 8)))
-		(line (pt 0 96)(pt 16 96)(line_width 3))
-	)
-	(port
-		(pt 0 112)
-		(input)
-		(text "EX_DestRegister[4..0]" (rect 0 0 198 16)(font "Arial" (font_size 8)))
-		(text "EX_DestRegister[4..0]" (rect 21 107 219 123)(font "Arial" (font_size 8)))
-		(line (pt 0 112)(pt 16 112)(line_width 3))
-	)
-	(port
-		(pt 0 128)
-		(input)
-		(text "Register2_Index[4..0]" (rect 0 0 198 16)(font "Arial" (font_size 8)))
-		(text "Register2_Index[4..0]" (rect 21 123 219 139)(font "Arial" (font_size 8)))
-		(line (pt 0 128)(pt 16 128)(line_width 3))
-	)
-	(port
-		(pt 320 32)
-		(output)
-		(text "Hazard" (rect 0 0 56 16)(font "Arial" (font_size 8)))
-		(text "Hazard" (rect 243 27 299 43)(font "Arial" (font_size 8)))
-		(line (pt 320 32)(pt 304 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 304 144))
-	)
-)
-(symbol
 	(rect 1824 56 2160 184)
 	(text "NOPIU" (rect 5 0 52 16)(font "Arial" (font_size 8)))
 	(text "inst53" (rect 8 110 57 124)(font "Arial" ))
@@ -3356,6 +3292,91 @@ agreement for further details.
 		(line (pt 14 25)(pt 32 16))
 	)
 )
+(symbol
+	(rect 2136 -608 2456 -384)
+	(text "HDU" (rect 5 0 33 16)(font "Arial" (font_size 8)))
+	(text "inst49" (rect 8 206 57 220)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Hazard1" (rect 0 0 66 16)(font "Arial" (font_size 8)))
+		(text "Hazard1" (rect 21 27 87 43)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Hazard2" (rect 0 0 66 16)(font "Arial" (font_size 8)))
+		(text "Hazard2" (rect 21 43 87 59)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Register1_Index[4..0]" (rect 0 0 198 16)(font "Arial" (font_size 8)))
+		(text "Register1_Index[4..0]" (rect 21 59 219 75)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "Register2_Index[4..0]" (rect 0 0 198 16)(font "Arial" (font_size 8)))
+		(text "Register2_Index[4..0]" (rect 21 75 219 91)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "ID_RegWrite" (rect 0 0 103 16)(font "Arial" (font_size 8)))
+		(text "ID_RegWrite" (rect 21 91 124 107)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "ID_MemValid" (rect 0 0 103 16)(font "Arial" (font_size 8)))
+		(text "ID_MemValid" (rect 21 107 124 123)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "ID_DestRegister[4..0]" (rect 0 0 198 16)(font "Arial" (font_size 8)))
+		(text "ID_DestRegister[4..0]" (rect 21 123 219 139)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "Mem_RegWrite" (rect 0 0 113 16)(font "Arial" (font_size 8)))
+		(text "Mem_RegWrite" (rect 21 139 134 155)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "Mem_MemValid" (rect 0 0 113 16)(font "Arial" (font_size 8)))
+		(text "Mem_MemValid" (rect 21 155 134 171)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "Mem_DestRegister[4..0]" (rect 0 0 207 16)(font "Arial" (font_size 8)))
+		(text "Mem_DestRegister[4..0]" (rect 21 171 228 187)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 320 32)
+		(output)
+		(text "Hazard" (rect 0 0 56 16)(font "Arial" (font_size 8)))
+		(text "Hazard" (rect 243 27 299 43)(font "Arial" (font_size 8)))
+		(line (pt 320 32)(pt 304 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 304 208))
+	)
+)
 (connector
 	(pt 1400 -16)
 	(pt 1512 -16)
@@ -3364,11 +3385,6 @@ agreement for further details.
 (connector
 	(pt 1416 -48)
 	(pt 1512 -48)
-	(bus)
-)
-(connector
-	(pt 1672 -192)
-	(pt 1912 -192)
 	(bus)
 )
 (connector
@@ -3909,10 +3925,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(pt 3184 144)
-	(pt 5120 144)
-)
-(connector
 	(pt 3184 160)
 	(pt 5120 160)
 	(bus)
@@ -4041,16 +4053,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "MemDataForwardable" (rect 5640 56 5788 70)(font "Arial" ))
-	(pt 5600 64)
-	(pt 5752 64)
-)
-(connector
-	(text "MemDataForwardable" (rect 3296 1464 3444 1478)(font "Arial" ))
-	(pt 3608 1480)
-	(pt 3288 1480)
-)
-(connector
 	(pt 1520 -736)
 	(pt 1520 -920)
 )
@@ -4117,7 +4119,7 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "EX_RegWrite" (rect 5630 96 5720 110)(font "Arial" ))
+	(text "EX_RegWrite" (rect 5630 104 5720 118)(font "Arial" ))
 	(pt 5600 112)
 	(pt 8224 112)
 )
@@ -4170,10 +4172,6 @@ agreement for further details.
 (connector
 	(pt 1880 -560)
 	(pt 2136 -560)
-)
-(connector
-	(pt 1880 -544)
-	(pt 2136 -544)
 )
 (connector
 	(pt 1520 -920)
@@ -4231,11 +4229,6 @@ agreement for further details.
 (connector
 	(pt 1688 -208)
 	(pt 1688 208)
-	(bus)
-)
-(connector
-	(pt 1688 -208)
-	(pt 1912 -208)
 	(bus)
 )
 (connector
@@ -4406,11 +4399,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2696 272)
-	(pt 1504 272)
-	(bus)
-)
-(connector
 	(pt 1336 224)
 	(pt 1400 224)
 	(bus)
@@ -4569,26 +4557,6 @@ agreement for further details.
 (connector
 	(pt 832 208)
 	(pt 960 208)
-	(bus)
-)
-(connector
-	(pt 1744 -272)
-	(pt 1624 -272)
-	(bus)
-)
-(connector
-	(pt 1624 -272)
-	(pt 1624 -208)
-	(bus)
-)
-(connector
-	(pt 1344 -208)
-	(pt 1624 -208)
-	(bus)
-)
-(connector
-	(pt 1624 -208)
-	(pt 1688 -208)
 	(bus)
 )
 (connector
@@ -4799,11 +4767,6 @@ agreement for further details.
 (connector
 	(pt 3608 240)
 	(pt 3608 -48)
-	(bus)
-)
-(connector
-	(pt 3184 240)
-	(pt 3608 240)
 	(bus)
 )
 (connector
@@ -5206,6 +5169,125 @@ agreement for further details.
 	(pt 6136 1056)
 	(bus)
 )
+(connector
+	(pt 2136 -544)
+	(pt 1888 -544)
+	(bus)
+)
+(connector
+	(pt 1888 -544)
+	(pt 1888 -208)
+	(bus)
+)
+(connector
+	(pt 1688 -208)
+	(pt 1888 -208)
+	(bus)
+)
+(connector
+	(pt 1888 -208)
+	(pt 1912 -208)
+	(bus)
+)
+(connector
+	(pt 2136 -528)
+	(pt 1896 -528)
+	(bus)
+)
+(connector
+	(pt 1896 -528)
+	(pt 1896 -192)
+	(bus)
+)
+(connector
+	(pt 1672 -192)
+	(pt 1896 -192)
+	(bus)
+)
+(connector
+	(pt 1896 -192)
+	(pt 1912 -192)
+	(bus)
+)
+(connector
+	(text "ID_DestRegs[4..0]" (rect 1535 256 1675 270)(font "Arial" ))
+	(pt 2696 272)
+	(pt 1504 272)
+	(bus)
+)
+(connector
+	(pt 1448 -392)
+	(pt 1552 -392)
+	(bus)
+)
+(connector
+	(pt 1448 -208)
+	(pt 1448 -392)
+	(bus)
+)
+(connector
+	(pt 1344 -208)
+	(pt 1448 -208)
+	(bus)
+)
+(connector
+	(pt 1448 -208)
+	(pt 1688 -208)
+	(bus)
+)
+(connector
+	(text "Mem_RegWrite" (rect 2000 -528 2099 -514)(font "Arial" ))
+	(pt 2000 -512)
+	(pt 2136 -512)
+)
+(connector
+	(text "Mem_RegWrite" (rect 3207 136 3306 150)(font "Arial" ))
+	(pt 3184 144)
+	(pt 5120 144)
+)
+(connector
+	(text "Mem_Data_Forwardable" (rect 2008 -512 2173 -498)(font "Arial" ))
+	(pt 2136 -496)
+	(pt 2000 -496)
+)
+(connector
+	(text "Mem_DestReg[4..0]" (rect 3288 232 3428 246)(font "Arial" ))
+	(pt 3184 240)
+	(pt 3608 240)
+	(bus)
+)
+(connector
+	(text "EX_RegWrite" (rect 2008 -480 2098 -466)(font "Arial" ))
+	(pt 2136 -464)
+	(pt 2000 -464)
+)
+(connector
+	(text "EX_Data_Forwardable" (rect 2016 -464 2172 -450)(font "Arial" ))
+	(pt 2136 -448)
+	(pt 2008 -448)
+)
+(connector
+	(text "Mem_DestReg[4..0]" (rect 2008 -496 2148 -482)(font "Arial" ))
+	(pt 2136 -480)
+	(pt 2000 -480)
+	(bus)
+)
+(connector
+	(text "EX_MemDataForwardable" (rect 5640 56 5813 70)(font "Arial" ))
+	(pt 5600 64)
+	(pt 5752 64)
+)
+(connector
+	(text "EX_MemDataForwardable" (rect 3296 1464 3469 1478)(font "Arial" ))
+	(pt 3608 1480)
+	(pt 3288 1480)
+)
+(connector
+	(text "EX_Dest_Reg[4..0]" (rect 2016 -448 2156 -434)(font "Arial" ))
+	(pt 2016 -432)
+	(pt 2136 -432)
+	(bus)
+)
 (junction (pt 1672 -32))
 (junction (pt 2408 -208))
 (junction (pt 2376 -192))
@@ -5229,7 +5311,6 @@ agreement for further details.
 (junction (pt -120 224))
 (junction (pt -696 224))
 (junction (pt 832 208))
-(junction (pt 1624 -208))
 (junction (pt 5872 240))
 (junction (pt 5912 208))
 (junction (pt 8096 384))
@@ -5249,6 +5330,9 @@ agreement for further details.
 (junction (pt 6608 240))
 (junction (pt 6624 1000))
 (junction (pt 6376 1136))
+(junction (pt 1888 -208))
+(junction (pt 1896 -192))
+(junction (pt 1448 -208))
 (text "IF/ID" (rect 1016 -536 1340 -448)(font "Arial" (font_size 48)(bold)))
 (text "ID/MEM" (rect 2792 -512 3181 -424)(font "Arial" (font_size 48)(bold)))
 (text "MEM/EX" (rect 5184 -448 5573 -360)(font "Arial" (font_size 48)(bold)))
