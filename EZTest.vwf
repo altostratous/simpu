@@ -3113,6 +3113,126 @@ SIGNAL("Debug_Instruction[0]")
 	PARENT = "Debug_Instruction";
 }
 
+SIGNAL("Debug_ID_Reg1")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 5;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("Debug_ID_Reg1[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Debug_ID_Reg1";
+}
+
+SIGNAL("Debug_ID_Reg1[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Debug_ID_Reg1";
+}
+
+SIGNAL("Debug_ID_Reg1[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Debug_ID_Reg1";
+}
+
+SIGNAL("Debug_ID_Reg1[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Debug_ID_Reg1";
+}
+
+SIGNAL("Debug_ID_Reg1[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Debug_ID_Reg1";
+}
+
+SIGNAL("Debug_Mem_Dest_Reg")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 5;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("Debug_Mem_Dest_Reg[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Debug_Mem_Dest_Reg";
+}
+
+SIGNAL("Debug_Mem_Dest_Reg[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Debug_Mem_Dest_Reg";
+}
+
+SIGNAL("Debug_Mem_Dest_Reg[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Debug_Mem_Dest_Reg";
+}
+
+SIGNAL("Debug_Mem_Dest_Reg[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Debug_Mem_Dest_Reg";
+}
+
+SIGNAL("Debug_Mem_Dest_Reg[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "Debug_Mem_Dest_Reg";
+}
+
 TRANSITION_LIST("Clock")
 {
 	NODE
@@ -5757,6 +5877,96 @@ TRANSITION_LIST("Debug_Instruction[1]")
 }
 
 TRANSITION_LIST("Debug_Instruction[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Debug_ID_Reg1[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Debug_ID_Reg1[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Debug_ID_Reg1[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Debug_ID_Reg1[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Debug_ID_Reg1[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Debug_Mem_Dest_Reg[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Debug_Mem_Dest_Reg[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Debug_Mem_Dest_Reg[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Debug_Mem_Dest_Reg[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Debug_Mem_Dest_Reg[0]")
 {
 	NODE
 	{
@@ -8841,6 +9051,126 @@ DISPLAY_LINE
 	TREE_INDEX = 307;
 	TREE_LEVEL = 1;
 	PARENT = 302;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Debug_ID_Reg1";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 308;
+	TREE_LEVEL = 0;
+	CHILDREN = 309, 310, 311, 312, 313;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Debug_ID_Reg1[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 309;
+	TREE_LEVEL = 1;
+	PARENT = 308;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Debug_ID_Reg1[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 310;
+	TREE_LEVEL = 1;
+	PARENT = 308;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Debug_ID_Reg1[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 311;
+	TREE_LEVEL = 1;
+	PARENT = 308;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Debug_ID_Reg1[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 312;
+	TREE_LEVEL = 1;
+	PARENT = 308;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Debug_ID_Reg1[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 313;
+	TREE_LEVEL = 1;
+	PARENT = 308;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Debug_Mem_Dest_Reg";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 314;
+	TREE_LEVEL = 0;
+	CHILDREN = 315, 316, 317, 318, 319;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Debug_Mem_Dest_Reg[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 315;
+	TREE_LEVEL = 1;
+	PARENT = 314;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Debug_Mem_Dest_Reg[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 316;
+	TREE_LEVEL = 1;
+	PARENT = 314;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Debug_Mem_Dest_Reg[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 317;
+	TREE_LEVEL = 1;
+	PARENT = 314;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Debug_Mem_Dest_Reg[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 318;
+	TREE_LEVEL = 1;
+	PARENT = 314;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Debug_Mem_Dest_Reg[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 319;
+	TREE_LEVEL = 1;
+	PARENT = 314;
 }
 
 TIME_BAR

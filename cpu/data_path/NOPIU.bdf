@@ -72,7 +72,7 @@ agreement for further details.
 	(input)
 	(rect 96 392 264 408)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
-	(text "RegWrite" (rect 5 0 72 14)(font "Arial" ))
+	(text "RegWrite" (rect 5 0 71 14)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -212,7 +212,7 @@ agreement for further details.
 	(annotation_block (parameter)(rect -272 32 -70 95))
 )
 (symbol
-	(rect -72 -88 40 -40)
+	(rect -72 -96 40 -48)
 	(text "LPM_CONSTANT" (rect 4 0 159 18)(font "Arial" (font_size 10)))
 	(text "inst11" (rect 3 37 52 51)(font "Arial" ))
 	(port
@@ -240,10 +240,10 @@ agreement for further details.
 		(line (pt 64 40)(pt 64 24))
 		(line (pt 16 40)(pt 16 24))
 	)
-	(annotation_block (parameter)(rect -320 -176 -118 -113))
+	(annotation_block (parameter)(rect -320 -184 -118 -121))
 )
 (symbol
-	(rect 280 -120 392 -32)
+	(rect 280 -128 392 -40)
 	(text "BUSMUX" (rect 28 0 105 18)(font "Arial" (font_size 10)))
 	(text "inst1" (rect 3 77 44 91)(font "Arial" ))
 	(port
@@ -288,7 +288,7 @@ agreement for further details.
 		(line (pt 44 16)(pt 68 32))
 		(line (pt 44 80)(pt 68 64))
 	)
-	(annotation_block (parameter)(rect 392 -176 584 -134))
+	(annotation_block (parameter)(rect 392 -184 584 -142))
 )
 (symbol
 	(rect -136 400 -24 448)
@@ -427,12 +427,7 @@ agreement for further details.
 	(bus)
 )
 (connector
+	(text "Hazard" (rect 320 -56 334 -7)(font "Arial" )(vertical))
 	(pt 336 -40)
-	(pt 336 -32)
+	(pt 336 2)
 )
-(connector
-	(text "Hazard" (rect 320 -48 334 1)(font "Arial" )(vertical))
-	(pt 336 -32)
-	(pt 336 10)
-)
-(junction (pt 336 -32))
