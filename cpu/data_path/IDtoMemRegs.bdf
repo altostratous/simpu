@@ -1677,6 +1677,21 @@ agreement for further details.
 	(pt 336 -144)
 	(bus)
 )
+(connector
+	(text "Clock" (rect 392 928 433 942)(font "Arial" ))
+	(pt 472 944)
+	(pt 384 944)
+)
+(connector
+	(text "Clear" (rect 352 944 393 958)(font "Arial" ))
+	(pt 472 960)
+	(pt 344 960)
+)
+(connector
+	(text "Write" (rect 312 960 353 974)(font "Arial" ))
+	(pt 472 976)
+	(pt 304 976)
+)
 (text "Clock" (rect 416 -864 457 -850)(font "Arial" ))
 (text "Clear" (rect 384 -848 425 -834)(font "Arial" ))
 (text "Write" (rect 336 -832 377 -818)(font "Arial" ))

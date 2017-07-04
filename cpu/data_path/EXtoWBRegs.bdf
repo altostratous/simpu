@@ -232,7 +232,7 @@ agreement for further details.
 	(input)
 	(rect 512 408 680 424)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
-	(text "RegWrite" (rect 5 0 72 14)(font "Arial" ))
+	(text "RegWrite" (rect 5 0 71 14)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -1286,6 +1286,21 @@ agreement for further details.
 	(pt 1072 2320)
 	(pt 1232 2320)
 	(bus)
+)
+(connector
+	(text "Clock" (rect 696 1432 737 1446)(font "Arial" ))
+	(pt 776 1448)
+	(pt 688 1448)
+)
+(connector
+	(text "Clear" (rect 656 1448 697 1462)(font "Arial" ))
+	(pt 776 1464)
+	(pt 648 1464)
+)
+(connector
+	(text "Write" (rect 616 1464 657 1478)(font "Arial" ))
+	(pt 776 1480)
+	(pt 608 1480)
 )
 (text "Clock" (rect 704 416 745 430)(font "Arial" ))
 (text "Clear" (rect 672 432 713 446)(font "Arial" ))
