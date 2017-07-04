@@ -2359,11 +2359,6 @@ agreement for further details.
 	(pt 592 184)
 )
 (connector
-	(text "IN1_Select[0]" (rect 553 136 660 150)(font "Arial" ))
-	(pt 552 152)
-	(pt 640 152)
-)
-(connector
 	(text "LUI" (rect 424 112 448 126)(font "Arial" ))
 	(pt 488 128)
 	(pt 416 128)
@@ -2510,6 +2505,11 @@ agreement for further details.
 	(text "BNEQ" (rect 616 -224 649 -210)(font "Arial" ))
 	(pt 712 -208)
 	(pt 608 -208)
+)
+(connector
+	(text "IN2_Select[0]" (rect 553 136 660 150)(font "Arial" ))
+	(pt 552 152)
+	(pt 640 152)
 )
 (junction (pt 312 312))
 (junction (pt 312 296))
