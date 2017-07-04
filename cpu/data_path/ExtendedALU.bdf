@@ -1124,7 +1124,7 @@ agreement for further details.
 	(annotation_block (parameter)(rect 936 -48 1128 -6))
 )
 (symbol
-	(rect 464 -72 704 24)
+	(rect 464 -304 704 -208)
 	(text "Multiplier" (rect 5 0 99 16)(font "Arial" (font_size 8)))
 	(text "inst3sdf3" (rect 8 78 82 92)(font "Arial" ))
 	(port
@@ -2179,7 +2179,7 @@ agreement for further details.
 		(line (pt 44 16)(pt 68 32))
 		(line (pt 44 80)(pt 68 64))
 	)
-	(annotation_block (parameter)(rect 392 40 584 82))
+	(annotation_block (parameter)(rect -8 -80 184 -38))
 )
 (symbol
 	(rect 128 120 240 168)
@@ -2497,6 +2497,55 @@ agreement for further details.
 	)
 	(annotation_block (parameter)(rect -224 1328 -22 1391))
 )
+(symbol
+	(rect 312 -32 424 56)
+	(text "BUSMUX" (rect 28 70 105 88)(font "Arial" (font_size 10)))
+	(text "inst69" (rect 3 -3 52 11)(font "Arial" ))
+	(port
+		(pt 0 24)
+		(input)
+		(text "datab[WIDTH-1..0]" (rect 6 51 166 67)(font "Arial" (font_size 8)))
+		(text "datab[]" (rect 6 21 72 37)(font "Arial" (font_size 8)))
+		(line (pt 0 24)(pt 44 24)(line_width 3))
+	)
+	(port
+		(pt 56 0)
+		(input)
+		(text "sel" (rect 59 70 87 86)(font "Arial" (font_size 8)))
+		(text "sel" (rect 59 2 87 18)(font "Arial" (font_size 8)))
+		(line (pt 56 0)(pt 56 16))
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "dataa[WIDTH-1..0]" (rect 6 19 166 35)(font "Arial" (font_size 8)))
+		(text "dataa[]" (rect 6 53 72 69)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 44 56)(line_width 3))
+	)
+	(port
+		(pt 112 40)
+		(output)
+		(text "result[WIDTH-1..0]" (rect 75 35 244 51)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 37 150 53)(font "Arial" (font_size 8)))
+		(line (pt 68 40)(pt 112 40)(line_width 3))
+	)
+	(parameter
+		"WIDTH"
+		"32"
+		"Width of I/O, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(drawing
+		(text "0" (rect 52 46 60 57)(font "Arial" (font_size 6)))
+		(text "1" (rect 52 22 60 33)(font "Arial" (font_size 6)))
+		(line (pt 68 24)(pt 68 56))
+		(line (pt 44 8)(pt 44 72))
+		(line (pt 44 72)(pt 68 56))
+		(line (pt 44 8)(pt 68 24))
+	)
+	(flipx)
+	(annotation_block (parameter)(rect 424 -96 616 -54))
+)
 (connector
 	(pt 1104 80)
 	(pt 1096 80)
@@ -2727,38 +2776,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "In2[31..0]" (rect 392 -40 474 -26)(font "Arial" ))
-	(pt 464 -24)
-	(pt 384 -24)
-	(bus)
-)
-(connector
-	(pt 464 -40)
-	(pt 328 -40)
-	(bus)
-)
-(connector
-	(pt 328 -40)
-	(pt 328 64)
-	(bus)
-)
-(connector
-	(pt 232 64)
-	(pt 328 64)
-	(bus)
-)
-(connector
-	(pt 328 64)
-	(pt 456 64)
-	(bus)
-)
-(connector
-	(text "mul_res[31..0]" (rect 712 -56 827 -42)(font "Arial" ))
-	(pt 704 -40)
-	(pt 800 -40)
-	(bus)
-)
-(connector
 	(pt 880 120)
 	(pt 912 120)
 )
@@ -2833,11 +2850,6 @@ agreement for further details.
 	(pt 824 64)
 	(pt 776 64)
 	(bus)
-)
-(connector
-	(text "Opcode[0]" (rect 408 -24 482 -10)(font "Arial" ))
-	(pt 464 -8)
-	(pt 400 -8)
 )
 (connector
 	(text "OpcodeData[16][4..0]" (rect 164 1168 329 1182)(font "Arial" ))
@@ -3156,11 +3168,6 @@ agreement for further details.
 	(pt 568 1144)
 )
 (connector
-	(pt -8 80)
-	(pt 456 80)
-	(bus)
-)
-(connector
 	(pt -64 120)
 	(pt -64 136)
 )
@@ -3357,4 +3364,91 @@ agreement for further details.
 	(pt 1232 192)
 	(pt 1288 192)
 )
-(junction (pt 328 64))
+(connector
+	(text "In2[31..0]" (rect 392 -272 474 -258)(font "Arial" ))
+	(pt 464 -256)
+	(pt 384 -256)
+	(bus)
+)
+(connector
+	(text "mul_res[31..0]" (rect 712 -288 827 -274)(font "Arial" ))
+	(pt 704 -272)
+	(pt 800 -272)
+	(bus)
+)
+(connector
+	(text "Opcode[0]" (rect 408 -256 482 -242)(font "Arial" ))
+	(pt 464 -240)
+	(pt 400 -240)
+)
+(connector
+	(pt 464 -272)
+	(pt 248 -272)
+	(bus)
+)
+(connector
+	(pt 232 64)
+	(pt 248 64)
+	(bus)
+)
+(connector
+	(pt 368 -120)
+	(pt 368 -32)
+)
+(connector
+	(text "LUI" (rect 475 -118 499 -104)(font "Arial" ))
+	(pt 496 -120)
+	(pt 368 -120)
+)
+(connector
+	(pt 424 8)
+	(pt 432 8)
+	(bus)
+)
+(connector
+	(pt 432 8)
+	(pt 432 64)
+	(bus)
+)
+(connector
+	(pt 432 64)
+	(pt 456 64)
+	(bus)
+)
+(connector
+	(pt 312 24)
+	(pt 248 24)
+	(bus)
+)
+(connector
+	(pt 248 64)
+	(pt 248 24)
+	(bus)
+)
+(connector
+	(pt 248 24)
+	(pt 248 -272)
+	(bus)
+)
+(connector
+	(pt 312 -8)
+	(pt 288 -8)
+	(bus)
+)
+(connector
+	(pt 288 -8)
+	(pt 288 80)
+	(bus)
+)
+(connector
+	(pt -8 80)
+	(pt 288 80)
+	(bus)
+)
+(connector
+	(pt 288 80)
+	(pt 456 80)
+	(bus)
+)
+(junction (pt 248 24))
+(junction (pt 288 80))
