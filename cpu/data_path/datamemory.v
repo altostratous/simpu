@@ -4,7 +4,7 @@ module datamemory( write, addr, datain, dataout, clk, reset);
 	input write, clk, reset;
 	output [31:0] dataout;
 	
-	reg[31:0] mem[255:0];
+	reg[31:0] mem[63:0];
 	
 	assign dataout = mem[addr];
 	
