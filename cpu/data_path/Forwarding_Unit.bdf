@@ -22,7 +22,7 @@ agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 152 24 400 40)
+	(rect 152 32 400 48)
 	(text "INPUT" (rect 205 0 246 11)(font "Arial" (font_size 6)))
 	(text "ForwardSrc1[4..0]" (rect 5 0 145 14)(font "Arial" ))
 	(pt 248 8)
@@ -72,7 +72,7 @@ agreement for further details.
 	(input)
 	(rect 152 -72 400 -56)
 	(text "INPUT" (rect 205 0 246 11)(font "Arial" (font_size 6)))
-	(text "OriginalSrc[4..0]" (rect 5 0 146 14)(font "Arial" ))
+	(text "OriginalSrc[4..0]" (rect 5 0 145 14)(font "Arial" ))
 	(pt 248 8)
 	(drawing
 		(line (pt 164 12)(pt 189 12))
@@ -88,7 +88,7 @@ agreement for further details.
 	(input)
 	(rect 152 96 392 112)
 	(text "INPUT" (rect 197 0 238 11)(font "Arial" (font_size 6)))
-	(text "ForwardSrc1_Write" (rect 5 0 146 14)(font "Arial" ))
+	(text "ForwardSrc1_Write" (rect 5 0 145 14)(font "Arial" ))
 	(pt 240 8)
 	(drawing
 		(line (pt 156 12)(pt 181 12))
@@ -136,7 +136,7 @@ agreement for further details.
 	(input)
 	(rect 152 120 392 136)
 	(text "INPUT" (rect 197 0 238 11)(font "Arial" (font_size 6)))
-	(text "ForwardSrc1_Valid" (rect 5 0 146 14)(font "Arial" ))
+	(text "ForwardSrc1_Valid" (rect 5 0 145 14)(font "Arial" ))
 	(pt 240 8)
 	(drawing
 		(line (pt 156 12)(pt 181 12))
@@ -152,7 +152,7 @@ agreement for further details.
 	(input)
 	(rect 160 312 400 328)
 	(text "INPUT" (rect 197 0 238 11)(font "Arial" (font_size 6)))
-	(text "ForwardSrc2_Valid" (rect 5 0 146 14)(font "Arial" ))
+	(text "ForwardSrc2_Valid" (rect 5 0 145 14)(font "Arial" ))
 	(pt 240 8)
 	(drawing
 		(line (pt 156 12)(pt 181 12))
@@ -168,7 +168,7 @@ agreement for further details.
 	(input)
 	(rect 144 560 384 576)
 	(text "INPUT" (rect 197 0 238 11)(font "Arial" (font_size 6)))
-	(text "ForwardSrc3_Valid" (rect 5 0 146 14)(font "Arial" ))
+	(text "ForwardSrc3_Valid" (rect 5 0 145 14)(font "Arial" ))
 	(pt 240 8)
 	(drawing
 		(line (pt 156 12)(pt 181 12))
@@ -547,6 +547,39 @@ agreement for further details.
 		(arc (pt 31 36)(pt 31 12)(rect 19 12 44 37))
 	)
 )
+(symbol
+	(rect 1536 264 1600 312)
+	(text "OR2" (rect 1 0 25 11)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 37 44 51)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 37)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 37)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 15 32))
+	)
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 21)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 21)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 15 16))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 29)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 29)(font "Courier New" (bold))(invisible))
+		(line (pt 48 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 14 36)(pt 25 36))
+		(line (pt 14 13)(pt 25 13))
+		(arc (pt 7 29)(pt 7 19)(rect -14 8 19 41))
+		(arc (pt 49 24)(pt 25 13)(rect -6 13 57 76))
+		(arc (pt 25 35)(pt 49 24)(rect -6 -27 57 36))
+	)
+)
 (connector
 	(pt 632 208)
 	(pt 448 208)
@@ -590,21 +623,6 @@ agreement for further details.
 (connector
 	(pt 448 208)
 	(pt 448 416)
-	(bus)
-)
-(connector
-	(pt 624 40)
-	(pt 624 32)
-	(bus)
-)
-(connector
-	(pt 632 40)
-	(pt 624 40)
-	(bus)
-)
-(connector
-	(pt 624 32)
-	(pt 400 32)
 	(bus)
 )
 (connector
@@ -669,11 +687,6 @@ agreement for further details.
 	(text "Forward[1]" (rect 1616 32 1698 46)(font "Arial" ))
 	(pt 1504 48)
 	(pt 1672 48)
-)
-(connector
-	(text "Forward[0]" (rect 1609 280 1691 294)(font "Arial" ))
-	(pt 1448 296)
-	(pt 1680 296)
 )
 (connector
 	(text "one" (rect 976 88 1000 102)(font "Arial" ))
@@ -773,6 +786,25 @@ agreement for further details.
 (connector
 	(pt 904 544)
 	(pt 840 544)
+)
+(connector
+	(pt 400 40)
+	(pt 632 40)
+	(bus)
+)
+(connector
+	(text "Forward[0]" (rect 1673 272 1755 286)(font "Arial" ))
+	(pt 1600 288)
+	(pt 1744 288)
+)
+(connector
+	(pt 1448 296)
+	(pt 1536 296)
+)
+(connector
+	(text "one" (rect 1472 264 1496 278)(font "Arial" ))
+	(pt 1536 280)
+	(pt 1464 280)
 )
 (junction (pt 448 24))
 (junction (pt 448 208))
