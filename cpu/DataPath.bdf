@@ -2095,54 +2095,6 @@ agreement for further details.
 	(annotation_block (parameter)(rect 3592 1280 3964 1385))
 )
 (symbol
-	(rect 4584 544 4696 632)
-	(text "BUSMUX" (rect 28 0 105 18)(font "Arial" (font_size 10)))
-	(text "inst5" (rect 3 77 44 91)(font "Arial" ))
-	(port
-		(pt 0 64)
-		(input)
-		(text "datab[WIDTH-1..0]" (rect 6 51 166 67)(font "Arial" (font_size 8)))
-		(text "datab[]" (rect 6 51 72 67)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 44 64)(line_width 3))
-	)
-	(port
-		(pt 56 88)
-		(input)
-		(text "sel" (rect 59 70 87 86)(font "Arial" (font_size 8)))
-		(text "sel" (rect 59 70 87 86)(font "Arial" (font_size 8)))
-		(line (pt 56 88)(pt 56 72))
-	)
-	(port
-		(pt 0 32)
-		(input)
-		(text "dataa[WIDTH-1..0]" (rect 6 19 166 35)(font "Arial" (font_size 8)))
-		(text "dataa[]" (rect 6 19 72 35)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 44 32)(line_width 3))
-	)
-	(port
-		(pt 112 48)
-		(output)
-		(text "result[WIDTH-1..0]" (rect 75 35 244 51)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 35 150 51)(font "Arial" (font_size 8)))
-		(line (pt 68 48)(pt 112 48)(line_width 3))
-	)
-	(parameter
-		"WIDTH"
-		"16"
-		"Width of I/O, any integer > 0"
-		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
-	)
-	(drawing
-		(text "0" (rect 52 31 60 42)(font "Arial" (font_size 6)))
-		(text "1" (rect 52 55 60 66)(font "Arial" (font_size 6)))
-		(line (pt 68 64)(pt 68 32))
-		(line (pt 44 80)(pt 44 16))
-		(line (pt 44 16)(pt 68 32))
-		(line (pt 44 80)(pt 68 64))
-	)
-	(annotation_block (parameter)(rect 4352 672 4544 714))
-)
-(symbol
 	(rect 3536 1152 3584 1184)
 	(text "WIRE" (rect 1 0 34 11)(font "Arial" (font_size 6)))
 	(text "inst28" (rect 3 21 52 35)(font "Arial" ))
@@ -2678,6 +2630,54 @@ agreement for further details.
 		(rectangle (rect 16 16 464 304))
 	)
 )
+(symbol
+	(rect 4584 544 4696 632)
+	(text "BUSMUX" (rect 28 0 105 18)(font "Arial" (font_size 10)))
+	(text "inst5" (rect 3 77 44 91)(font "Arial" ))
+	(port
+		(pt 0 64)
+		(input)
+		(text "datab[WIDTH-1..0]" (rect 6 51 166 67)(font "Arial" (font_size 8)))
+		(text "datab[]" (rect 6 51 72 67)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 44 64)(line_width 3))
+	)
+	(port
+		(pt 56 88)
+		(input)
+		(text "sel" (rect 59 70 87 86)(font "Arial" (font_size 8)))
+		(text "sel" (rect 59 70 87 86)(font "Arial" (font_size 8)))
+		(line (pt 56 88)(pt 56 72))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "dataa[WIDTH-1..0]" (rect 6 19 166 35)(font "Arial" (font_size 8)))
+		(text "dataa[]" (rect 6 19 72 35)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 44 32)(line_width 3))
+	)
+	(port
+		(pt 112 48)
+		(output)
+		(text "result[WIDTH-1..0]" (rect 75 35 244 51)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 35 150 51)(font "Arial" (font_size 8)))
+		(line (pt 68 48)(pt 112 48)(line_width 3))
+	)
+	(parameter
+		"WIDTH"
+		"32"
+		"Width of I/O, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(drawing
+		(text "0" (rect 52 31 60 42)(font "Arial" (font_size 6)))
+		(text "1" (rect 52 55 60 66)(font "Arial" (font_size 6)))
+		(line (pt 68 64)(pt 68 32))
+		(line (pt 44 80)(pt 44 16))
+		(line (pt 44 16)(pt 68 32))
+		(line (pt 44 80)(pt 68 64))
+	)
+	(annotation_block (parameter)(rect 4352 672 4544 714))
+)
 (connector
 	(text "Clock" (rect 896 224 937 238)(font "Arial" ))
 	(pt 960 240)
@@ -3091,11 +3091,6 @@ agreement for further details.
 	(text "WB_RegWrite" (rect 3392 1496 3482 1510)(font "Arial" ))
 	(pt 3608 1512)
 	(pt 3384 1512)
-)
-(connector
-	(text "Mem_Data_Forwardable" (rect 3296 1464 3461 1478)(font "Arial" ))
-	(pt 3608 1480)
-	(pt 3288 1480)
 )
 (connector
 	(pt 3256 1528)
@@ -3773,11 +3768,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Mem_Data_Forwardable" (rect 5640 56 5805 70)(font "Arial" ))
-	(pt 5600 64)
-	(pt 5752 64)
-)
-(connector
 	(text "IN1_Select" (rect 5640 72 5722 86)(font "Arial" ))
 	(pt 5600 80)
 	(pt 5744 80)
@@ -3842,6 +3832,16 @@ agreement for further details.
 	(pt 5600 208)
 	(pt 8224 208)
 	(bus)
+)
+(connector
+	(text "MemDataForwardable" (rect 5640 56 5788 70)(font "Arial" ))
+	(pt 5600 64)
+	(pt 5752 64)
+)
+(connector
+	(text "MemDataForwardable" (rect 3296 1464 3444 1478)(font "Arial" ))
+	(pt 3608 1480)
+	(pt 3288 1480)
 )
 (junction (pt 1400 240))
 (junction (pt 1672 -32))

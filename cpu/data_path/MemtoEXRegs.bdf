@@ -1400,10 +1400,6 @@ agreement for further details.
 	(pt 1168 400)
 )
 (connector
-	(pt 584 240)
-	(pt 704 240)
-)
-(connector
 	(text "Clock" (rect 632 240 673 254)(font "Arial" ))
 	(pt 624 256)
 	(pt 704 256)
@@ -1481,6 +1477,11 @@ agreement for further details.
 	(text "Write" (rect 648 -216 689 -202)(font "Arial" ))
 	(pt 608 -200)
 	(pt 664 -200)
+)
+(connector
+	(pt 584 240)
+	(pt 704 240)
+	(bus)
 )
 (text "Clear" (rect 664 416 705 430)(font "Arial" ))
 (text "Write" (rect 616 432 657 446)(font "Arial" ))
