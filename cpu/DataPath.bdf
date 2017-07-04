@@ -473,7 +473,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 1728 144 2232 368)
+	(rect 1760 144 2264 368)
 	(text "NOPIU" (rect 5 0 52 16)(font "Arial" (font_size 8)))
 	(text "inst1" (rect 8 206 49 220)(font "Arial" ))
 	(port
@@ -1644,7 +1644,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 5680 720 5712 736)
+	(rect 5680 648 5712 664)
 	(text "VCC" (rect 7 0 31 11)(font "Arial" (font_size 6)))
 	(text "inst33" (rect 3 5 52 19)(font "Arial" )(invisible))
 	(port
@@ -2383,41 +2383,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1448 240)
-	(pt 1448 288)
-	(bus)
-)
-(connector
-	(pt 1688 224)
-	(pt 1728 224)
-	(bus)
-)
-(connector
-	(pt 1672 256)
-	(pt 1728 256)
-	(bus)
-)
-(connector
-	(pt 1448 288)
-	(pt 1728 288)
-	(bus)
-)
-(connector
-	(pt 1336 304)
-	(pt 1728 304)
-	(bus)
-)
-(connector
-	(pt 1336 320)
-	(pt 1728 320)
-	(bus)
-)
-(connector
-	(pt 1336 336)
-	(pt 1728 336)
-	(bus)
-)
-(connector
 	(pt 2408 -208)
 	(pt 2408 224)
 	(bus)
@@ -2438,36 +2403,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2232 208)
-	(pt 2704 208)
-	(bus)
-)
-(connector
-	(pt 2232 240)
-	(pt 2704 240)
-	(bus)
-)
-(connector
-	(pt 2232 272)
-	(pt 2704 272)
-	(bus)
-)
-(connector
-	(pt 2232 288)
-	(pt 2704 288)
-	(bus)
-)
-(connector
-	(pt 2232 304)
-	(pt 2704 304)
-	(bus)
-)
-(connector
-	(pt 2232 320)
-	(pt 2704 320)
-	(bus)
-)
-(connector
 	(text "Clock" (rect 2632 96 2673 110)(font "Arial" ))
 	(pt 2624 112)
 	(pt 2704 112)
@@ -2478,41 +2413,8 @@ agreement for further details.
 	(pt 2704 128)
 )
 (connector
-	(pt 2232 176)
-	(pt 2272 176)
-)
-(connector
-	(pt 2272 176)
-	(pt 2272 144)
-)
-(connector
 	(pt 2704 144)
 	(pt 2272 144)
-)
-(connector
-	(pt 2704 192)
-	(pt 2232 192)
-	(bus)
-)
-(connector
-	(pt 1504 208)
-	(pt 1504 224)
-	(bus)
-)
-(connector
-	(pt 1504 208)
-	(pt 1728 208)
-	(bus)
-)
-(connector
-	(pt 1672 -192)
-	(pt 1672 -32)
-	(bus)
-)
-(connector
-	(pt 1672 -32)
-	(pt 1672 256)
-	(bus)
 )
 (connector
 	(pt 2312 -208)
@@ -2542,21 +2444,6 @@ agreement for further details.
 (connector
 	(pt 1344 256)
 	(pt 1344 -208)
-	(bus)
-)
-(connector
-	(pt 1688 -208)
-	(pt 1688 224)
-	(bus)
-)
-(connector
-	(pt 1344 -208)
-	(pt 1688 -208)
-	(bus)
-)
-(connector
-	(pt 1688 -208)
-	(pt 1912 -208)
 	(bus)
 )
 (connector
@@ -2987,15 +2874,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "<<__$DEF_ALIAS9829>>" (rect 5664 656 5829 670)(font "Arial" )(invisible))
-	(pt 5696 672)
-	(pt 5976 672)
-)
-(connector
-	(pt 5696 736)
-	(pt 5696 672)
-)
-(connector
 	(text "WB_Dest_Reg[4..0]" (rect 5856 624 5996 638)(font "Arial" ))
 	(pt 5976 640)
 	(pt 5848 640)
@@ -3300,6 +3178,166 @@ agreement for further details.
 	(pt 5720 96)
 	(bus)
 )
+(connector
+	(text "Clock" (rect 1832 -128 1873 -114)(font "Arial" ))
+	(pt 1912 -112)
+	(pt 1824 -112)
+)
+(connector
+	(text "Clear" (rect 1776 -144 1817 -130)(font "Arial" ))
+	(pt 1912 -128)
+	(pt 1768 -128)
+)
+(connector
+	(text "WB_ALUOut[31..0]" (rect 8718 256 8850 270)(font "Arial" ))
+	(pt 8704 272)
+	(pt 8832 272)
+	(bus)
+)
+(connector
+	(text "WB_ALUOut[31..0]" (rect 1784 -168 1916 -154)(font "Arial" ))
+	(pt 1768 -160)
+	(pt 1912 -160)
+	(bus)
+)
+(connector
+	(text "WB_Dest_Reg[4..0]" (rect 1784 -184 1924 -170)(font "Arial" ))
+	(pt 1912 -176)
+	(pt 1776 -176)
+	(bus)
+)
+(connector
+	(text "WB_RegWrite" (rect 8712 80 8802 94)(font "Arial" ))
+	(pt 8704 96)
+	(pt 8840 96)
+)
+(connector
+	(text "WB_RegWrite" (rect 1832 -152 1922 -138)(font "Arial" ))
+	(pt 1912 -144)
+	(pt 1824 -144)
+)
+(connector
+	(pt 1448 240)
+	(pt 1448 288)
+	(bus)
+)
+(connector
+	(pt 2704 208)
+	(pt 2264 208)
+	(bus)
+)
+(connector
+	(pt 2704 240)
+	(pt 2264 240)
+	(bus)
+)
+(connector
+	(pt 2704 272)
+	(pt 2264 272)
+	(bus)
+)
+(connector
+	(pt 2704 288)
+	(pt 2264 288)
+	(bus)
+)
+(connector
+	(pt 2704 304)
+	(pt 2264 304)
+	(bus)
+)
+(connector
+	(pt 2704 320)
+	(pt 2264 320)
+	(bus)
+)
+(connector
+	(pt 2272 176)
+	(pt 2264 176)
+)
+(connector
+	(pt 2272 144)
+	(pt 2272 176)
+)
+(connector
+	(pt 2704 192)
+	(pt 2264 192)
+	(bus)
+)
+(connector
+	(pt 1504 224)
+	(pt 1504 208)
+	(bus)
+)
+(connector
+	(pt 1688 -208)
+	(pt 1688 224)
+	(bus)
+)
+(connector
+	(pt 1672 -192)
+	(pt 1672 -32)
+	(bus)
+)
+(connector
+	(pt 1672 -32)
+	(pt 1672 256)
+	(bus)
+)
+(connector
+	(pt 1344 -208)
+	(pt 1688 -208)
+	(bus)
+)
+(connector
+	(pt 1688 -208)
+	(pt 1912 -208)
+	(bus)
+)
+(connector
+	(pt 1504 208)
+	(pt 1760 208)
+	(bus)
+)
+(connector
+	(pt 1688 224)
+	(pt 1760 224)
+	(bus)
+)
+(connector
+	(pt 1672 256)
+	(pt 1760 256)
+	(bus)
+)
+(connector
+	(pt 1448 288)
+	(pt 1760 288)
+	(bus)
+)
+(connector
+	(pt 1336 304)
+	(pt 1760 304)
+	(bus)
+)
+(connector
+	(pt 1336 320)
+	(pt 1760 320)
+	(bus)
+)
+(connector
+	(pt 1336 336)
+	(pt 1760 336)
+	(bus)
+)
+(connector
+	(text "<<__$DEF_ALIAS9829>>" (rect 5664 656 5829 670)(font "Arial" )(invisible))
+	(pt 5976 672)
+	(pt 5696 672)
+)
+(connector
+	(pt 5696 672)
+	(pt 5696 664)
+)
 (junction (pt 1400 240))
 (junction (pt 1672 -32))
 (junction (pt 2408 -208))
@@ -3318,7 +3356,6 @@ agreement for further details.
 (junction (pt 5656 208))
 (junction (pt 5632 192))
 (text "IF/ID" (rect 1016 -536 1340 -448)(font "Arial" (font_size 48)(bold)))
-(text "IF/ID" (rect 9600 -432 9924 -344)(font "Arial" (font_size 48)(bold)))
 (text "ID/MEM" (rect 2792 -512 3181 -424)(font "Arial" (font_size 48)(bold)))
 (text "MEM/EX" (rect 5184 -464 5573 -376)(font "Arial" (font_size 48)(bold)))
 (text "EX/WB" (rect 8304 -448 8628 -360)(font "Arial" (font_size 48)(bold)))
@@ -3326,4 +3363,3 @@ agreement for further details.
 (line (pt 2888 784)(pt 2888 -400)(color 255 0 0)(line_width 5))
 (line (pt 5256 800)(pt 5256 -384)(color 255 0 0)(line_width 5))
 (line (pt 8416 824)(pt 8416 -360)(color 255 0 0)(line_width 5))
-(line (pt 9680 840)(pt 9680 -344)(color 255 0 0)(line_width 5))
