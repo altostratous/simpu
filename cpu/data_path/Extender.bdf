@@ -24,7 +24,7 @@ agreement for further details.
 	(input)
 	(rect 88 152 288 168)
 	(text "INPUT" (rect 157 0 198 11)(font "Arial" (font_size 6)))
-	(text "Input[15..0]" (rect 5 0 105 14)(font "Arial" ))
+	(text "Input[15..0]" (rect 5 0 104 14)(font "Arial" ))
 	(pt 200 8)
 	(drawing
 		(line (pt 116 12)(pt 141 12))
@@ -54,7 +54,7 @@ agreement for further details.
 )
 (pin
 	(output)
-	(rect 504 200 765 216)
+	(rect 640 336 901 352)
 	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
 	(text "Sign_Extended[31..0]" (rect 90 0 255 14)(font "Arial" ))
 	(pt 0 8)
@@ -507,6 +507,30 @@ agreement for further details.
 		(line (pt 14 25)(pt 32 16))
 	)
 )
+(symbol
+	(rect 328 888 376 920)
+	(text "WIRE" (rect 1 0 34 11)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 21 44 35)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 21)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 21)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 21)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 21)(font "Courier New" (bold))(invisible))
+		(line (pt 32 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 14 7)(pt 32 16))
+		(line (pt 14 25)(pt 14 7))
+		(line (pt 14 25)(pt 32 16))
+	)
+)
 (connector
 	(text "Extended[31..16]" (rect 369 24 501 38)(font "Arial" ))
 	(pt 448 40)
@@ -684,4 +708,16 @@ agreement for further details.
 	(text "Sign_Extended[16]" (rect 385 832 525 846)(font "Arial" ))
 	(pt 376 848)
 	(pt 472 848)
+)
+(connector
+	(text "Sign_Extended[15..0]" (rect 384 888 549 902)(font "Arial" ))
+	(pt 376 904)
+	(pt 472 904)
+	(bus)
+)
+(connector
+	(text "Input[15..0]" (rect 272 888 371 902)(font "Arial" ))
+	(pt 328 904)
+	(pt 264 904)
+	(bus)
 )
