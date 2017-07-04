@@ -55,8 +55,8 @@ agreement for further details.
 	(port
 		(pt 336 32)
 		(output)
-		(text "MemWrtie" (rect 0 0 75 16)(font "Arial" (font_size 8)))
-		(text "MemWrtie" (rect 240 27 315 43)(font "Arial" (font_size 8)))
+		(text "MemWrite" (rect 0 0 75 16)(font "Arial" (font_size 8)))
+		(text "MemWrite" (rect 240 27 315 43)(font "Arial" (font_size 8)))
 		(line (pt 336 32)(pt 320 32))
 	)
 	(port
