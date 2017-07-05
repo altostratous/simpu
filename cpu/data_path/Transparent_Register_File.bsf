@@ -21,7 +21,7 @@ agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 416 176)
+	(rect 16 16 472 176)
 	(text "Transparent_Register_File" (rect 5 0 241 16)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 142 41 156)(font "Arial" ))
 	(port
@@ -74,20 +74,27 @@ agreement for further details.
 		(line (pt 0 128)(pt 16 128))
 	)
 	(port
-		(pt 400 32)
+		(pt 456 32)
 		(output)
 		(text "Read_Data1[31..0]" (rect 0 0 160 16)(font "Arial" (font_size 8)))
-		(text "Read_Data1[31..0]" (rect 219 27 379 43)(font "Arial" (font_size 8)))
-		(line (pt 400 32)(pt 384 32)(line_width 3))
+		(text "Read_Data1[31..0]" (rect 275 27 435 43)(font "Arial" (font_size 8)))
+		(line (pt 456 32)(pt 440 32)(line_width 3))
 	)
 	(port
-		(pt 400 48)
+		(pt 456 48)
 		(output)
 		(text "Read_Data2[31..0]" (rect 0 0 160 16)(font "Arial" (font_size 8)))
-		(text "Read_Data2[31..0]" (rect 219 43 379 59)(font "Arial" (font_size 8)))
-		(line (pt 400 48)(pt 384 48)(line_width 3))
+		(text "Read_Data2[31..0]" (rect 275 43 435 59)(font "Arial" (font_size 8)))
+		(line (pt 456 48)(pt 440 48)(line_width 3))
+	)
+	(port
+		(pt 456 64)
+		(output)
+		(text "Registers[31..0][31..0]" (rect 0 0 217 16)(font "Arial" (font_size 8)))
+		(text "Registers[31..0][31..0]" (rect 218 59 435 75)(font "Arial" (font_size 8)))
+		(line (pt 456 64)(pt 440 64)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 384 144))
+		(rectangle (rect 16 16 440 144))
 	)
 )

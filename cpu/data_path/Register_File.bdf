@@ -212,6 +212,22 @@ agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
+(pin
+	(output)
+	(rect 1144 896 1429 912)
+	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
+	(text "Registers[31..0][31..0]" (rect 90 0 279 14)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
 (symbol
 	(rect 216 48 504 176)
 	(text "Register32" (rect 5 0 99 16)(font "Arial" (font_size 8)))
@@ -1631,7 +1647,7 @@ agreement for further details.
 		(pt 112 56)
 		(output)
 		(text "result[LPM_WIDTH-1..0]" (rect 75 41 282 57)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 41 138 57)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 41 150 57)(font "Arial" (font_size 8)))
 		(line (pt 68 56)(pt 112 56)(line_width 3))
 	)
 	(parameter
@@ -1709,7 +1725,7 @@ agreement for further details.
 		(pt 112 56)
 		(output)
 		(text "result[LPM_WIDTH-1..0]" (rect 75 41 282 57)(font "Arial" (font_size 8)))
-		(text "result[]" (rect 75 41 138 57)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 41 150 57)(font "Arial" (font_size 8)))
 		(line (pt 68 56)(pt 112 56)(line_width 3))
 	)
 	(parameter
@@ -1787,7 +1803,7 @@ agreement for further details.
 		(pt 120 88)
 		(output)
 		(text "eq[LPM_DECODES-1..0]" (rect 83 79 271 95)(font "Arial" (font_size 8)))
-		(text "eq[]" (rect 83 79 114 95)(font "Arial" (font_size 8)))
+		(text "eq[]" (rect 83 79 120 95)(font "Arial" (font_size 8)))
 		(line (pt 104 88)(pt 120 88)(line_width 3))
 	)
 	(parameter
@@ -2768,5 +2784,11 @@ agreement for further details.
 	(text "Write_Reg_Num[4..0]" (rect -405 152 -249 166)(font "Arial" ))
 	(pt -368 168)
 	(pt -312 168)
+	(bus)
+)
+(connector
+	(text "muxone[31..0][31..0]" (rect 1062 888 1227 902)(font "Arial" ))
+	(pt 1144 904)
+	(pt 1056 904)
 	(bus)
 )
