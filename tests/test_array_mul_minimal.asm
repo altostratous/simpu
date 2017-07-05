@@ -1,10 +1,4 @@
             ADDI    $31 $31 27
-            ADDI    $11 $11 1
-            ADDI    $10 $10 18
-            ADDI    $10 $10 -1
-fill_next   SWNDR   $10 $11
-            BNEQ    $10 $0  fill_next
-            ADDI    $10 $10 -1
             ADDI    $0  $0  0           Zero value
             MOV     $1  $0
             ADDI    $3  $3  3           Three value

@@ -1,8 +1,3 @@
-                ADDI    $29 $29 5           Fill the memory
-fill_next       SWNDR   $29 $28
-                ADDI    $28 $28 1
-                BNEQ    $29 $0  fill_next
-                ADDI    $29 $29 -1          [SLOT]
                 ADDI    $0  $0  0           Zero value
                 ADDI    $30 $30 5           Point to memory zero value
                 ADDI    $1  $1  5           100 counter
