@@ -38,38 +38,6 @@ agreement for further details.
 )
 (pin
 	(input)
-	(rect 96 -56 264 -40)
-	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
-	(text "Hazard1" (rect 5 0 62 14)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 152 18)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect 96 -16 264 0)
-	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
-	(text "Hazard2" (rect 5 0 62 14)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 152 18)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect 72 416 272 432)
 	(text "INPUT" (rect 157 0 198 11)(font "Arial" (font_size 6)))
 	(text "Mem_RegWrite" (rect 5 0 104 14)(font "Arial" ))
@@ -152,7 +120,7 @@ agreement for further details.
 	(input)
 	(rect -8 56 264 72)
 	(text "INPUT" (rect 229 0 270 11)(font "Arial" (font_size 6)))
-	(text "Register1_Index[4..0]" (rect 5 0 179 14)(font "Arial" ))
+	(text "Register1_Index[4..0]" (rect 5 0 178 14)(font "Arial" ))
 	(pt 272 8)
 	(drawing
 		(line (pt 188 12)(pt 213 12))
@@ -168,7 +136,7 @@ agreement for further details.
 	(input)
 	(rect -8 88 264 104)
 	(text "INPUT" (rect 229 0 270 11)(font "Arial" (font_size 6)))
-	(text "Register2_Index[4..0]" (rect 5 0 179 14)(font "Arial" ))
+	(text "Register2_Index[4..0]" (rect 5 0 178 14)(font "Arial" ))
 	(pt 272 8)
 	(drawing
 		(line (pt 188 12)(pt 213 12))
@@ -179,6 +147,22 @@ agreement for further details.
 		(line (pt 213 12)(pt 217 8))
 	)
 	(text "VCC" (rect 232 7 256 18)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 40 -56 264 -40)
+	(text "INPUT" (rect 181 0 222 11)(font "Arial" (font_size 6)))
+	(text "PotentialHazard" (rect 5 0 129 14)(font "Arial" ))
+	(pt 224 8)
+	(drawing
+		(line (pt 140 12)(pt 165 12))
+		(line (pt 140 4)(pt 165 4))
+		(line (pt 169 8)(pt 224 8))
+		(line (pt 140 12)(pt 140 4))
+		(line (pt 165 4)(pt 169 8))
+		(line (pt 165 12)(pt 169 8))
+	)
+	(text "VCC" (rect 184 7 208 18)(font "Arial" (font_size 6)))
 )
 (pin
 	(output)
@@ -341,7 +325,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 1720 -96 1784 -16)
+	(rect 1528 -120 1592 -40)
 	(text "OR4" (rect 1 0 25 11)(font "Arial" (font_size 6)))
 	(text "inst" (rect 3 69 36 83)(font "Arial" ))
 	(port
@@ -389,6 +373,38 @@ agreement for further details.
 		(arc (pt 25 51)(pt 49 40)(rect -6 -11 57 52))
 	)
 )
+(symbol
+	(rect 1688 -80 1752 -32)
+	(text "AND2" (rect 1 0 34 11)(font "Arial" (font_size 6)))
+	(text "inst2" (rect 3 37 44 51)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 21)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 21)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 37)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 37)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 29)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 29)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12))
+		(line (pt 14 37)(pt 31 37))
+		(line (pt 14 12)(pt 14 37))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
+	)
+)
 (connector
 	(pt 272 560)
 	(pt 352 560)
@@ -430,30 +446,6 @@ agreement for further details.
 	(text "Col_R2_Mem" (rect 1512 352 1594 366)(font "Arial" ))
 	(pt 1504 368)
 	(pt 1592 368)
-)
-(connector
-	(pt 1784 -56)
-	(pt 1808 -56)
-)
-(connector
-	(text "Col_R1_ID" (rect 1624 -96 1698 -82)(font "Arial" ))
-	(pt 1720 -80)
-	(pt 1616 -80)
-)
-(connector
-	(text "Col_R1_Mem" (rect 1633 -80 1715 -66)(font "Arial" ))
-	(pt 1720 -64)
-	(pt 1616 -64)
-)
-(connector
-	(text "Col_R2_ID" (rect 1633 -64 1707 -50)(font "Arial" ))
-	(pt 1720 -48)
-	(pt 1616 -48)
-)
-(connector
-	(text "Col_R2_Mem" (rect 1630 -48 1712 -34)(font "Arial" ))
-	(pt 1720 -32)
-	(pt 1616 -32)
 )
 (connector
 	(text "Register1_Index[4..0]" (rect 1064 200 1237 214)(font "Arial" ))
@@ -505,4 +497,60 @@ agreement for further details.
 	(text "Mem_RegWrite" (rect 1078 384 1177 398)(font "Arial" ))
 	(pt 1200 400)
 	(pt 1064 400)
+)
+(connector
+	(text "Col_R1_ID" (rect 1432 -120 1506 -106)(font "Arial" ))
+	(pt 1528 -104)
+	(pt 1424 -104)
+)
+(connector
+	(text "Col_R1_Mem" (rect 1441 -104 1523 -90)(font "Arial" ))
+	(pt 1528 -88)
+	(pt 1424 -88)
+)
+(connector
+	(text "Col_R2_ID" (rect 1441 -88 1515 -74)(font "Arial" ))
+	(pt 1528 -72)
+	(pt 1424 -72)
+)
+(connector
+	(text "Col_R2_Mem" (rect 1438 -72 1520 -58)(font "Arial" ))
+	(pt 1528 -56)
+	(pt 1424 -56)
+)
+(connector
+	(pt 1752 -56)
+	(pt 1808 -56)
+)
+(connector
+	(pt 1688 -48)
+	(pt 1672 -48)
+)
+(connector
+	(pt 1688 -64)
+	(pt 1672 -64)
+)
+(connector
+	(pt 1672 -64)
+	(pt 1672 -80)
+)
+(connector
+	(pt 1672 -80)
+	(pt 1592 -80)
+)
+(connector
+	(pt 1672 -48)
+	(pt 1672 -8)
+)
+(connector
+	(pt 296 -8)
+	(pt 1672 -8)
+)
+(connector
+	(pt 296 -8)
+	(pt 296 -48)
+)
+(connector
+	(pt 264 -48)
+	(pt 296 -48)
 )

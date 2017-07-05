@@ -21,9 +21,9 @@ agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 352 304)
+	(rect 16 16 352 272)
 	(text "ControlUnit" (rect 5 0 108 16)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 270 41 284)(font "Arial" ))
+	(text "inst" (rect 8 238 41 252)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -132,25 +132,11 @@ agreement for further details.
 	(port
 		(pt 336 208)
 		(output)
-		(text "Hazard1" (rect 0 0 66 16)(font "Arial" (font_size 8)))
-		(text "Hazard1" (rect 249 203 315 219)(font "Arial" (font_size 8)))
+		(text "PotentialHazard" (rect 0 0 141 16)(font "Arial" (font_size 8)))
+		(text "PotentialHazard" (rect 174 203 315 219)(font "Arial" (font_size 8)))
 		(line (pt 336 208)(pt 320 208))
 	)
-	(port
-		(pt 336 224)
-		(output)
-		(text "Hazard2" (rect 0 0 66 16)(font "Arial" (font_size 8)))
-		(text "Hazard2" (rect 249 219 315 235)(font "Arial" (font_size 8)))
-		(line (pt 336 224)(pt 320 224))
-	)
-	(port
-		(pt 336 240)
-		(output)
-		(text "Hazard3" (rect 0 0 66 16)(font "Arial" (font_size 8)))
-		(text "Hazard3" (rect 249 235 315 251)(font "Arial" (font_size 8)))
-		(line (pt 336 240)(pt 320 240))
-	)
 	(drawing
-		(rectangle (rect 16 16 320 272))
+		(rectangle (rect 16 16 320 240))
 	)
 )
