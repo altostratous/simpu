@@ -3450,6 +3450,31 @@ agreement for further details.
 		(circle (rect 31 12 39 20))
 	)
 )
+(symbol
+	(rect 296 240 344 272)
+	(text "NOT" (rect 1 0 25 11)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 21 44 35)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 21)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 21)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 21)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 21)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
 (connector
 	(pt 1400 -16)
 	(pt 1512 -16)
@@ -5389,6 +5414,11 @@ agreement for further details.
 	(text "HDU_Hazard" (rect 832 248 914 262)(font "Arial" ))
 	(pt 832 256)
 	(pt 904 256)
+)
+(connector
+	(text "HDU_Hazard" (rect 244 240 326 254)(font "Arial" ))
+	(pt 256 256)
+	(pt 296 256)
 )
 (junction (pt 1672 -32))
 (junction (pt 2408 -208))
