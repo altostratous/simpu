@@ -15,12 +15,12 @@ next_col        ADDI    $2  $2  -1                  Step to next column
                 MOV     $7  $5                      Initialize counter
 next_elem       ADDNDR  $8  $3  $30                 $8 = Mem[$3}
                 ADDNDR  $9  $4  $30                 $8 = Mem[$4}
-                MUL     $8  $9  $8  $9              Multiplication
-                ADD     $6  $6  $9                  Accumulation
+                MUL     $11 $12  $8  $9              Multiplication
+                ADD     $6  $6  $12                  Accumulation
                 ADDI    $7  $7  -1                  Count down
                 ADDI    $3  $3  1                   Step over first array
-                ADDI    $4  $4  5                   Step over second array
                 BNEQ    $7  $0  next_elem           Go to next element
-                SWNDR   $10 $6                      Store the accumulation to the target cell
+                ADDI    $4  $4  5                   [SLOT] Step over second array
                 BNEQ    $2  $0  next_col            Go to next column
+                SWNDR   $10 $6                      [SLOT] Store the accumulation to the target cell
                 BNEQ    $1  $0  next_row            Go to next row
