@@ -388,6 +388,54 @@ agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
+(pin
+	(output)
+	(rect 2688 -216 2899 -200)
+	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
+	(text "Debug_ID_Equal" (rect 90 0 205 14)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect -736 456 -525 472)
+	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
+	(text "Debug_CU_PCSrc" (rect 90 0 205 14)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect -488 328 -269 344)
+	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
+	(text "Debug_CU_PCMode" (rect 90 0 213 14)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
 (symbol
 	(rect 8 176 192 304)
 	(text "instmemory" (rect 5 0 87 14)(font "Arial" ))
@@ -2048,7 +2096,7 @@ agreement for further details.
 	)
 )
 (symbol
-	(rect 384 176 808 304)
+	(rect 344 176 768 304)
 	(text "Preprocessor" (rect 5 0 118 16)(font "Arial" (font_size 8)))
 	(text "inst43" (rect 8 110 57 124)(font "Arial" ))
 	(port
@@ -3377,6 +3425,31 @@ agreement for further details.
 		(rectangle (rect 16 16 304 208))
 	)
 )
+(symbol
+	(rect 904 240 952 272)
+	(text "NOT" (rect 1 0 25 11)(font "Arial" (font_size 6)))
+	(text "inst52" (rect 3 21 52 35)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 21)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 21)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 21)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 21)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
 (connector
 	(pt 1400 -16)
 	(pt 1512 -16)
@@ -4057,10 +4130,6 @@ agreement for further details.
 	(pt 1520 -920)
 )
 (connector
-	(pt 2624 -208)
-	(pt 2648 -208)
-)
-(connector
 	(pt 2648 -208)
 	(pt 2648 -312)
 )
@@ -4149,17 +4218,8 @@ agreement for further details.
 	(pt 2592 96)
 )
 (connector
-	(pt 1408 592)
-	(pt -872 592)
-	(bus)
-)
-(connector
 	(pt 1520 -736)
 	(pt 1544 -736)
-)
-(connector
-	(pt 856 -720)
-	(pt 1544 -720)
 )
 (connector
 	(pt 1528 -704)
@@ -4266,12 +4326,12 @@ agreement for further details.
 	(pt 2456 176)
 )
 (connector
-	(text "Clock" (rect 896 208 937 222)(font "Arial" ))
+	(text "Clock" (rect 896 216 937 230)(font "Arial" ))
 	(pt 960 224)
 	(pt 888 224)
 )
 (connector
-	(text "Clear" (rect 896 224 937 238)(font "Arial" ))
+	(text "Clear" (rect 896 232 937 246)(font "Arial" ))
 	(pt 960 240)
 	(pt 888 240)
 )
@@ -4331,24 +4391,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "Clock" (rect 304 208 345 222)(font "Arial" ))
-	(pt 384 224)
-	(pt 296 224)
-)
-(connector
-	(text "Clear" (rect 304 224 345 238)(font "Arial" ))
-	(pt 384 240)
-	(pt 296 240)
-)
-(connector
-	(pt 856 224)
-	(pt 808 224)
-)
-(connector
-	(pt 856 -720)
-	(pt 856 224)
-)
-(connector
 	(text "Clock" (rect -56 240 -15 254)(font "Arial" ))
 	(pt -64 256)
 	(pt 8 256)
@@ -4369,34 +4411,9 @@ agreement for further details.
 	(pt -632 240)
 )
 (connector
-	(pt -600 280)
-	(pt -600 272)
-)
-(connector
-	(text "CU_PCMode" (rect -592 256 -518 270)(font "Arial" ))
-	(pt -600 272)
-	(pt -480 272)
-)
-(connector
 	(text "CU_PCWrite" (rect -600 272 -518 286)(font "Arial" ))
 	(pt -480 288)
 	(pt -608 288)
-)
-(connector
-	(pt -872 240)
-	(pt -840 240)
-	(bus)
-)
-(connector
-	(pt -872 592)
-	(pt -872 240)
-	(bus)
-)
-(connector
-	(text "Register1[15..0]" (rect -960 192 -828 206)(font "Arial" ))
-	(pt -840 208)
-	(pt -1000 208)
-	(bus)
 )
 (connector
 	(pt 1336 224)
@@ -4417,11 +4434,6 @@ agreement for further details.
 	(text "CU_Reg2_Select" (rect 1552 -29 1566 86)(font "Arial" )(vertical))
 	(pt 1568 8)
 	(pt 1568 64)
-)
-(connector
-	(text "CU_PCSrc" (rect -798 270 -784 336)(font "Arial" )(vertical))
-	(pt -784 264)
-	(pt -784 344)
 )
 (connector
 	(pt 1624 -32)
@@ -4537,26 +4549,6 @@ agreement for further details.
 (connector
 	(pt -696 224)
 	(pt -480 224)
-	(bus)
-)
-(connector
-	(pt 888 440)
-	(pt 832 440)
-	(bus)
-)
-(connector
-	(pt 832 440)
-	(pt 832 208)
-	(bus)
-)
-(connector
-	(pt 808 208)
-	(pt 832 208)
-	(bus)
-)
-(connector
-	(pt 832 208)
-	(pt 960 208)
 	(bus)
 )
 (connector
@@ -4747,16 +4739,6 @@ agreement for further details.
 (connector
 	(pt 240 392)
 	(pt 240 208)
-	(bus)
-)
-(connector
-	(pt 192 208)
-	(pt 240 208)
-	(bus)
-)
-(connector
-	(pt 240 208)
-	(pt 384 208)
 	(bus)
 )
 (connector
@@ -5288,6 +5270,126 @@ agreement for further details.
 	(pt 2136 -432)
 	(bus)
 )
+(connector
+	(pt 2624 -208)
+	(pt 2648 -208)
+)
+(connector
+	(pt 2648 -208)
+	(pt 2688 -208)
+)
+(connector
+	(pt -736 464)
+	(pt -784 464)
+)
+(connector
+	(pt -784 264)
+	(pt -784 464)
+)
+(connector
+	(text "CU_PCSrc" (rect -798 486 -784 552)(font "Arial" )(vertical))
+	(pt -784 464)
+	(pt -784 560)
+)
+(connector
+	(pt 1408 592)
+	(pt -1008 592)
+	(bus)
+)
+(connector
+	(text "Register1[15..0]" (rect -928 224 -796 238)(font "Arial" ))
+	(pt -968 240)
+	(pt -840 240)
+	(bus)
+)
+(connector
+	(pt -1008 592)
+	(pt -1008 208)
+	(bus)
+)
+(connector
+	(pt -1008 208)
+	(pt -840 208)
+	(bus)
+)
+(connector
+	(pt -488 336)
+	(pt -520 336)
+)
+(connector
+	(pt -520 336)
+	(pt -520 272)
+)
+(connector
+	(text "CU_PCMode" (rect -592 256 -518 270)(font "Arial" ))
+	(pt -632 272)
+	(pt -520 272)
+)
+(connector
+	(pt -520 272)
+	(pt -480 272)
+)
+(connector
+	(pt 952 256)
+	(pt 960 256)
+)
+(connector
+	(pt 192 208)
+	(pt 240 208)
+	(bus)
+)
+(connector
+	(pt 240 208)
+	(pt 344 208)
+	(bus)
+)
+(connector
+	(text "Clock" (rect 264 208 305 222)(font "Arial" ))
+	(pt 256 224)
+	(pt 344 224)
+)
+(connector
+	(text "Clear" (rect 264 224 305 238)(font "Arial" ))
+	(pt 256 240)
+	(pt 344 240)
+)
+(connector
+	(pt 888 440)
+	(pt 792 440)
+	(bus)
+)
+(connector
+	(pt 792 208)
+	(pt 792 440)
+	(bus)
+)
+(connector
+	(pt 768 208)
+	(pt 792 208)
+	(bus)
+)
+(connector
+	(pt 792 208)
+	(pt 960 208)
+	(bus)
+)
+(connector
+	(pt 1544 -720)
+	(pt 816 -720)
+)
+(connector
+	(pt 816 -720)
+	(pt 816 224)
+)
+(connector
+	(pt 768 224)
+	(pt 816 224)
+)
+(connector
+	(text "HDU_Hazard" (rect 832 248 914 262)(font "Arial" ))
+	(pt 832 256)
+	(pt 904 256)
+)
 (junction (pt 1672 -32))
 (junction (pt 2408 -208))
 (junction (pt 2376 -192))
@@ -5310,7 +5412,6 @@ agreement for further details.
 (junction (pt 2328 -208))
 (junction (pt -120 224))
 (junction (pt -696 224))
-(junction (pt 832 208))
 (junction (pt 5872 240))
 (junction (pt 5912 208))
 (junction (pt 8096 384))
@@ -5333,6 +5434,10 @@ agreement for further details.
 (junction (pt 1888 -208))
 (junction (pt 1896 -192))
 (junction (pt 1448 -208))
+(junction (pt 2648 -208))
+(junction (pt -784 464))
+(junction (pt -520 272))
+(junction (pt 792 208))
 (text "IF/ID" (rect 1016 -536 1340 -448)(font "Arial" (font_size 48)(bold)))
 (text "ID/MEM" (rect 2792 -512 3181 -424)(font "Arial" (font_size 48)(bold)))
 (text "MEM/EX" (rect 5184 -448 5573 -360)(font "Arial" (font_size 48)(bold)))
