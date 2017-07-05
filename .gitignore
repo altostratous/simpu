@@ -4,3 +4,4 @@ incremental_db/*
 output_files/*
 simpu.qws
 simpasm
+wftests/BranchTest.vwf
