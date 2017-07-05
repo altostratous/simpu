@@ -1,0 +1,3 @@
+[submodule "simpasm"]
+	path = simpasm
+	url = https://github.com/altostratous/simpasm.git
