@@ -5,10 +5,10 @@ This is a simple CPU designed usign Quartus altera lite edition for the Computer
 All the docs can be found in the docs folder.
  
 ## Installation
-Just clone the repository to your PC and open the project file using Quartus and then build whole the project.
+Just clone the repository and the submodule to your PC and open the project file using Quartus and then build whole the project.
 
 ## Test
-The project has passed functional simulations with clock equal to 10.0 nanoseconds. This project depends on the assembler project simpasm.
+The project has passed functional simulations with clock equal to 10.0 nanoseconds. This project depends on the assembler project [simpasm](https://github.com/altostratous/simpasm).
 
 There are two major tests to run, test_array_mul_minimal and test_array_sort_minimal. To run the tests first compile the project once
 to ensure that there's no problem with the files and the Quartus/ModelSim version. 
